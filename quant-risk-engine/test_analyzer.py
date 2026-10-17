@@ -10,7 +10,7 @@ def test_calculate_statistics():
     assert stats["mean"] == 19.285714285714285
 
 def test_calculate_var():
-    data = [100, 102, 98, 105, 103, 99, 101, 104]
+    data = [0.010, -0.020, 0.015, -0.008, 0.004, -0.030, 0.012, -0.006]
     analyzer = QuantitativeRiskAnalyzer(data)
     var = analyzer.calculate_var(0.95)
     
